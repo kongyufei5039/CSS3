@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择必需和可选的input元素</title>
+    <style>
+        :required {
+            outline: medium solid green;
+        }
+        :optional {
+            outline: medium solid red;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="">
+        <p>
+            <label for="price">
+                $ per unit in your area:
+                <input type="number" min="0" max="100" required
+                    value="1" id="price" name="price"/>
+            </label>
+            <label for="price">
+                $ per unit in your area:
+                <input type="number" min="0" max="100"
+                    value="1" id="price1" name="price1"/>
+            </label>
+        </p>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

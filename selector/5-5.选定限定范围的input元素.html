@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择限定范围的input元素</title>
+    <style>
+        :in-range{
+            outline: medium solid green;
+        }
+        :out-of-range{
+            outline: medium solid red;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="">
+        <p>
+            <label for="price">
+                $ per unit in your area:
+                <input type="number" min="0" max="100"
+                    value="1" id="price" name="price"/>
+            </label>
+        </p>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

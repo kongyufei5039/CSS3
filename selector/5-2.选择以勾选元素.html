@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择已勾选元素</title>
+    <style type="text/css">
+        :checked + span {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border: medium solid black;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="">
+        <p>
+            <label for="apples">Do you like apples:</label>
+            <input type="checkbox" id="apples" name="apples"/>
+            <span>This will go red when checked</span>
+        </p>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

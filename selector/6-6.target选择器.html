@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>target选择器</title>
+    <style type="text/css">
+        :target {
+            border: thin black solid;
+            padding: 4px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#mytarget">Visit the Apress website</a>
+    <p id="mytarget">I like <span>apples</span>.</p>
+    <a href="#w3clink">Visit the W3C website</a>
+    <p id="w3clink">I like oranges.</p>
+</body>
+</html>
