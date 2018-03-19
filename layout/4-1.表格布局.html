@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格布局</title>
+    <style>
+        #table {
+            display: table;
+        }
+        div.row {
+            display: table-row;
+            background-color: lightgray;
+        }
+
+        p {
+            display: table-cell;
+            border: thin solid black;
+            padding: 15px;
+            margin: 15px;
+        }
+
+        span {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="table">
+        <div class="row">
+            <p>
+                There are of different kinds of fruit - there are over 500 varieties;
+                of banana alone. By the time we add the countless type of apples, oranges,
+                and other well-known fruit, we are faced with thousands of choices.
+            </p>
+            <p>
+                One of the most interesting aspects of fruit is the variety available in 
+                each country. I live near London, in an area which is known for its apples.
+            </p>
+            <p>
+                When travelling in Asia, I was struck by how many different kinds of banana
+                were avariable - many of which had unique flavours and which were only 
+                avariable within a small region.
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                <span>This is an apple.</span>
+            </p>
+            <p>
+                <span>This is a banana</span>
+            </p>
+            <p>
+                <span>No Fruit</span>
+            </p>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+</body>
+</html>

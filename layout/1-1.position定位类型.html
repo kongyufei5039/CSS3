@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position定位类型</title>
+    <style>
+        #test {
+            width: 100px;
+            height: 100px;
+            top: 5px;
+            left: 150px;
+            border: medium double black;
+        }
+        div {
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            There are lots of different kinds of fruit - there are over 500 varieties
+            of banana alone.
+        </p>
+        <p id="test">
+            It's block.
+        </p>
+        <p>
+            By the time we add the countless types of apples, oranges, and other
+            well-known fruit, we are faced with thousands of choices.
+        </p>
+        <p>
+            When travelling in Asia, I was struck by how many different
+            kinds of bananas were avarible - many of which had unique
+            flavours and which were only avaiable within a small region.
+        </p>
+        <p>
+            <button>Static</button>
+            <button>Relative</button>
+            <button>Absolute</button>
+            <button>Fixed</button>
+        </p>
+    </div>
+    <script>
+        var buttons = document.getElementsByTagName("BUTTON");
+        for(var i = 0; i < buttons.length; i++){
+            buttons[i].onclick = function(e){
+                document.getElementById("test").style.position = 
+                e.target.innerHTML;
+            }
+        }
+    </script>
+</body>
+</html>
