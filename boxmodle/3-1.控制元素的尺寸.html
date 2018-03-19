@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>控制元素尺寸</title>
+    <style type="text/css">
+        div {
+            width: 75%;
+            height: 100%;
+            border: thin solid black;
+        }
+        p {
+            background: lightgrey;
+            border: 4px solid black;
+            margin: 2px;
+            height: 50%;
+        }
+        #first {
+            box-sizing: border-box;
+            width: 50%;
+        }
+        #second {
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="first">
+            There are lots of different kinds of fruit - there are over 500 varireties
+            of banana alone. By the time we add the countless types of apples, oranges,
+            and other well-known fruit, we are faced with thousands of choices.
+        </p>
+
+        <p id="second">
+            There are lots of different kinds of fruit - there are over 500 varireties
+            of banana alone. By the time we add the countless types of apples, oranges,
+            and other well-known fruit, we are faced with thousands of choices.
+        </p>
+    </div>
+</body>
+</html>

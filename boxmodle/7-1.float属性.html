@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>float属性</title>
+    <style>
+        p.toggle {
+            float: left;
+            border: medium double black;
+            width: 40%;
+            margin: 2px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <p class="toggle">
+        There are lots of different kinds of fruit - there are over 500 varieties
+        of banana alone.
+    </p>
+    <p class="toggle">
+        By the time we add the countless types of apples, oranges, and other
+        well-known fruit, we are faced with thousands of choices.
+    </p>
+    <p>
+        When travelling in Asia, I was struck by how many different
+        kinds of bananas were avarible - many of which had unique
+        flavours and which were only avaiable within a small region.
+    </p>
+    <p>
+        <button>Left</button>
+        <button>Right</button>
+        <button>None</button>
+    </p>
+    <script>
+        var buttons = document.getElementsByTagName("BUTTON");
+        for(var i = 0; i < buttons.length; i++){
+            buttons[i].onclick = function(e){
+                var elements = document.getElementsByClassName("toggle");
+                for(var j = 0; j < elements.length; j++){
+                    elements[j].style.cssFloat = e.target.innerHTML;
+               }
+            }
+        }
+    </script>
+</body>
+</html>
