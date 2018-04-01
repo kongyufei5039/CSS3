@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>布局示例二</title>
+    <style>
+        .layoutDemo {
+            width: 960px;
+            background: #000;     
+        }
+                
+        #header {
+            width: 100%;
+            background: orange;
+        }
+                
+        #left {
+            width: 220px;
+            float: left;
+            margin-right: 10px;
+            background: green;
+        }
+                
+        #main-content {
+            width: 720px;
+            float: left;
+            background: gray;
+        }
+                
+        #footer {
+            width: 100%;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+        <div class="layoutDemo">
+            <div id="header" class="innerPadding border">Header Content</div>
+            <div id="content" class="clearfix">
+                <div id="left" class="aside innerPadding border">Left Sidebar</div>;
+                <div id="main-content" class="article innerPadding border">Main Content</div>
+            </div>
+            <div id="footer" class="innerPadding border"> Footer Content</div>
+        </div>
+        著作权归作者所有。
+        商业转载请联系作者获得授权,非商业转载请注明出处。
+        原文: https://www.w3cplus.com/content/css3-box-sizing © w3cplus.com
+</body>
+</html>
